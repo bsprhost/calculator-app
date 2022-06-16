@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+* {
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+.calculator {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	height: 100vh;
+	background-color: black;
+}
+
+/* 8888888888888888888888888888888888888888888888888888888888888888 */
+
+.display {
+	display: flex;
+	flex: 1;
+	position: relative;
+	align-items: stretch;
+	background-color: rgb(197, 139, 178);
+	margin: 14px;
+	margin-bottom: 7px;
+	padding: 10px 30px;
+	font-weight: bold;
+	font-size: xx-large;
+	position: relative;
+}
+
+/* 8888888888888888888888888888888888888888888888888888888888888888 */
+
+.btn-board {
+	display: flex;
+	flex: 2;
+	position: relative;
+	align-items: center;
+	align-items: stretch;
+	justify-content: center;
+	text-align: center;
+}
+
+.digits, .operators, .clear {
+	flex: 1;
+	overflow: auto;
+  
+	margin: 14px;
+	margin-top: 7px;
+	padding: 10px 30px;
+	background-color: aquamarine;
+	font-weight: bold;
+	text-align: center;
+}
+
+.operators {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: stretch;
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+}
+
+.clear {
+  display: flex;
+  flex-direction: column;
 }
